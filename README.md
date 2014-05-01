@@ -22,7 +22,7 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 ###Activity Checklist:
 1. Plug one end of a male to male jumper wire into the input socket on your Pibrella labelled 'A'.
 
-	![](jumper-wire.png)
+	![](jumper-wire.JPG)
 	
 2. Next connect the other end of the jumper wire to a crocodile cable. 
 	
@@ -64,4 +64,4 @@ With a Pi Camera connected, and a pressure senstive switch attached to the Pibre
 ##Community:
 Based on an idea submitted for the Raspberry Pi Poster Competition December 2013 by..
 
-![](poster.png)
+![](poster.JPG)
