@@ -88,8 +88,8 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 	
 6. Save and test your code. Your pressure senstive switch should now trigger some disco lights on the pibrella. The hamsters will love that! 		        	
 
-##Step 4: Hamster Dance
-Finally let's trigger some tunes for the hamsters to dance to, by dlownloading an Mp3 file and playing it using omxplayer.
+##Step 4: Hamsters neeed Music to Dance!
+Finally let's trigger some tunes for the hamsters to dance to, by downloading an Mp3 file and playing it using omxplayer. You can use your own mp3's if you transfer them to your Raspberry Pi, just change the name of the file in the code. 
 
 ###Activity Checklist:
 1. First you will need to put an mp3 onto your Raspberry Pi. You can do this either by connecting it to the internet and typing the following line into LXTerminal:
@@ -97,10 +97,23 @@ Finally let's trigger some tunes for the hamsters to dance to, by dlownloading a
 	`wget `
 	
 	or, by transfering an mp3 from a computer with a usb memory stick.
-2. Now navigate to the line `print("smap!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')` 
-3. Replace the word song with the name of your mp3. For example hamsterdance.mp3	
+2. Now navigate to the line `print("smap!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')` *Note: that you will need to replace the name of the mp3 iwth the name of the file you are using if it is different from the one being used here.* 
+3. Save the file and test that the program works by triggering the switch again.
+
+##Disclaimer:
+Adding lights and music to the party is fun, but could keep *you* awake at night, and may become a little annoying to adults. It may also scare hamsters of a shy disposition. 
 
 ##Community:
-Based on an idea submitted for the Raspberry Pi Poster Competition December 2013 by..
+Based on an idea submitted for the Raspberry Pi Poster Competition December 2013 by...
+It's been a pleasure to make this project a reality. 
 
 ![](poster.JPG)
+
+##Licence:
+Unless otherwise specified, everything in this repository is covered by the following licence:
+
+![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+***Hamster Party Cam*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+Based on a work at https://github.com/raspberrypilearning/hamster-party-cam
