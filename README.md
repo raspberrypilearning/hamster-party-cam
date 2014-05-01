@@ -1,7 +1,7 @@
 #Hamster Party Cam
 
 ###Introduction
-Hamsters are nocturnal, which means that they sleep in the day time and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping! 
+*"Hamsters are nocturnal, which means that they sleep in the day time and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!" - Violet* 
 
 Really we need to find some way of being able to see what the hamsters are up to during the night. I suspect they are partying. 
 
@@ -88,13 +88,13 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 	
 6. Save and test your code. Your pressure senstive switch should now trigger some disco lights on the pibrella. The hamsters will love that! 		        	
 
-##Step 4: Hamsters neeed Music to Dance!
+##Step 4: Hamsters need Music to Dance!
 Finally let's trigger some tunes for the hamsters to dance to, by downloading an Mp3 file and playing it using omxplayer. You can use your own mp3's if you transfer them to your Raspberry Pi, just change the name of the file in the code. 
 
 ###Activity Checklist:
 1. First you will need to put an mp3 onto your Raspberry Pi. You can do this either by connecting it to the internet and typing the following line into LXTerminal:
 	
-	`wget `
+	`wget https:// `
 	
 	or, by transfering an mp3 from a computer with a usb memory stick.
 2. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')` *Note: that you will need to replace the name of the mp3 iwth the name of the file you are using if it is different from the one being used here.* 
