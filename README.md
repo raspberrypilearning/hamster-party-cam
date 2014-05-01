@@ -8,7 +8,7 @@ Really we need to find some way of being able to see what the hamsters are up to
 In this project, we are going to use a Raspberry Pi Camera and a Pibrella with a Raspberry Pi to take pictures and video of the hamsters, that is triggered by their movement. 
 
 ##Step 0: Setting up your Raspberry Pi, Pi Camera and Pibrella
-You will need to set up your Raspberry Pi to take part in this activity. See the [Raspberry Pi Start Guide]() here to get you up and running.
+You will need to set up your Raspberry Pi to take part in this activity. See the [Raspberry Pi Start Guide](http://www.raspberrypi.org/help/quick-start-guide/) here to get you up and running.
 
 You will also require a Raspberry Pi Camera Module connected to your Raspberry Pi. See the [Raspberry Pi Camera Guide](http://www.raspberrypi.org/help/camera-module-setup/) here to connect your pi camera to your Raspberry Pi. Then follow [Raspberry Pi Camera Setup Tutorial](https://github.com/raspberrypilearning/python-picamera-setup) to enable the camera, test it, and download the picamera library.
 
@@ -41,7 +41,7 @@ With a Pi Camera connected, and a pressure senstive switch attached to the Pibre
 1. Open an LXTerminal window and type `mkdir hamster` and press **enter** to create a folder for your hamster party pictures.
 2. Then type `sudo idle &` and press **enter** to load the Python environment IDLE.
 2. Click on **File** and **New Window** to open a new text editor file.
-3. Save the file by clicking on **File** and **Save As** and name the file `hamster` and click **Ok**.
+3. Save the file by clicking on **File** and **Save As** and name the file `hamster-party` and click **Ok**.
 4. Now type the following code into your hamster file:
 
 	```python
@@ -53,7 +53,7 @@ With a Pi Camera connected, and a pressure senstive switch attached to the Pibre
     	while True:
         	if pibrella.input.a.read():
             	camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
-            	print("snap!")
+            	print("Party!")
             	pic += 1
         	time.sleep(0.2)    
 	```            
@@ -65,7 +65,7 @@ With a Pi Camera connected, and a pressure senstive switch attached to the Pibre
 We can add extra fun to the Python program that uses more features of the Pibrella board. For example, why not trigger the lights to come on in disco mode when a hamster triggers the switch?
 
 ###Activity Checklist:
-1. Make sure that `hamster.py` is open in a text editor still.
+1. Make sure that `hamster-party.py` is open in a text editor still.
 2. Add `random` to end of `import pibrella, picamera, time` in the first line.
 3. Underneath make a space to add a list for the LED lights on Pibrella like this:
 	
@@ -82,7 +82,7 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 	        time.sleep(0.2)
 	        result.off()
 	 ```
-5. Then navigate to the line `print("snap!")` and add `disco()` underneath the line.
+5. Then navigate to the line `print("Party!")` and add `disco()` underneath the line.
 
 	![](hamster-code-2.png)
 	
@@ -97,8 +97,36 @@ Finally let's trigger some tunes for the hamsters to dance to, by downloading an
 	`wget `
 	
 	or, by transfering an mp3 from a computer with a usb memory stick.
-2. Now navigate to the line `print("smap!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')` *Note: that you will need to replace the name of the mp3 iwth the name of the file you are using if it is different from the one being used here.* 
+2. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')` *Note: that you will need to replace the name of the mp3 iwth the name of the file you are using if it is different from the one being used here.* 
 3. Save the file and test that the program works by triggering the switch again.
+
+###Final Project Code:
+Your final project code should look something like this:
+
+```python
+import pibrella, picamera, time, random, os, sys
+
+colours = [pibrella.light.red, pibrella.light.amber, pibrella.light.green]
+
+def disco():
+	for i  in range(10):
+    	result = random.choice(colours)
+    	result.on()
+    	time.sleep(0.2)
+    	result.off()
+
+with picamera.PiCamera() as camera:
+    camera.resolution = (1024, 768)
+    pic = 1
+    while True:
+        if pibrella.input.a.read():
+            camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
+            print("Party!")
+            os.system('omxplayer hamsterdance.mp3 &')
+            disco()
+            pic += 1
+        time.sleep(0.5)
+```        
 
 ##Disclaimer:
 Adding lights and music to the party is fun, but could keep *you* awake at night, and may become a little annoying to adults. It may also scare hamsters of a shy disposition. 
