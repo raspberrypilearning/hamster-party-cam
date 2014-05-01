@@ -132,8 +132,8 @@ with picamera.PiCamera() as camera:
 Adding lights and music to the party is fun, but could keep *you* awake at night, and may become a little annoying to adults. It may also scare hamsters of a shy disposition. 
 
 ##Community:
-Based on an idea submitted for the Raspberry Pi Poster Competition December 2013 by...
-It's been a pleasure to make this project a reality. 
+Based on an idea submitted for the Raspberry Pi Poster Competition December 2013 by Violet.
+It's been a pleasure to make this Raspberry Pi poster project idea a reality. 
 
 ![](poster.JPG)
 
