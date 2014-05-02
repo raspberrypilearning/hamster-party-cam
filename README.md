@@ -94,10 +94,10 @@ Finally let's trigger some tunes for the hamsters to dance to, by downloading a 
 ###Activity Checklist:
 1. First you will need to put a a sound file onto your Raspberry Pi. You can do this either by connecting it to the internet and typing the following line into LXTerminal:
 	
-	`wget https:// `
+	`wget https://github.com/raspberrypilearning/hamster-party-cam?branch=master&filepath=hamsterdance.wav` Need to fix this doesn't work yet.
 	
 	or, by transfering a sound file from a computer with a usb memory stick.
-2. Add `sys, os` to the end of the `import` line.
+2. Add `os, sys` to the end of the `import` line.
 3. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')` *Note: that you will need to replace the name of the mp3 iwth the name of the file you are using if it is different from the one being used here.* 
 3. Save the file and test that the program works by triggering the switch again.
 
