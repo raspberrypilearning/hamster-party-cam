@@ -18,9 +18,9 @@ Next, you will need a Pibrella board attached to the GPIO pins on your Raspberry
 
 Phew; that is a fair bit of setup, but it will be worth it in the end.
 
-##Step 1: Create a pressure sensitive switch
+##Step 1: Create a trigger switch
 
-We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a switch that triggers the camera to make a program run, in order to take pictures of the party. 
+We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a trigger to make a program run, in order to take pictures of the party. 
 
 ###Activity checklist:
 
@@ -32,11 +32,19 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 	
 	![](crocodile-cable.png)
 	
-3. Connect the other end of the crocodile cable to a rectangle of tin foil the size of an A5 postcard.
+3. Connect the other end of the crocodile cable to the hamster cage.
 
-	![](tin-foil.png)
+	![](cage-connector.png)
 
-4. Place the tin foil on the floor in the hamster cage. When the hamster steps on the tin foil, it will trigger the camera to take a photo, so make sure you put it somewhere near the camera!
+4. When the hamster touches the clip, it will trigger the camera to take a photo, so make sure you put it somewhere in shot of the camera! 
+
+This is not the most effective trigger and may only work every now and then. A much more effective trigger lies in the use of the hamster wheel and a cheap [wind speed sensor](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf).
+
+###Activity Checklist:
+
+1. If your hamster home includes a wheel then remove it from the cage and place it on a table, along side the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the read switch and the magnet. 
+
+	1[](read-switch.png)
 
 ##Step 2: Create a Python program to take pictures of the hamsters
 
