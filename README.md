@@ -50,6 +50,8 @@ This is not the most effective trigger and may only work every now and then. A m
 3. Using sticky back plastic stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
 4. 
 
+	![](cage-setup.jpg)
+
 ##Step 2: Create a Python program to take pictures of the hamsters
 
 With a Pi camera connected and a pressure sensitive switch attached to the Pibrella board, you can now write a program in Python to detect movement and take a picture.
@@ -112,15 +114,11 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 
 ##Step 4: Hamsters need music to dance!
 
-Finally, let's trigger some tunes for the hamsters to dance to by downloading a sound file like an `.mp3` or `.wav`and playing it using omxplayer. You can use your own sound files if you transfer them to your Raspberry Pi; just change the name of the file in the code. 
+Finally, let's trigger some tunes for the hamsters to dance to by downloading a sound file like an `.mp3` or `.wav` and playing it using omxplayer. You can use your own sound files if you transfer them to your Raspberry Pi; just change the name of the file in the code. 
 
 ###Activity checklist:
 
-1. First you will need to put a a sound file onto your Raspberry Pi. You can do this by connecting it to the internet and typing the following line into LXTerminal:
-	
-	`wget https://github.com/raspberrypilearning/hamster-party-cam?branch=master&filepath=hamsterdance.wav` Need to fix this doesn't work yet.
-	
-	You can also add a sound file by transferring a sound file from a computer with a USB memory stick.
+1. First you will need to put a a sound file onto your Raspberry Pi. You could create one in Sonic Pi, or you could add a sound file by transferring a sound file from a computer with a USB memory stick. 
 2. Add `os, sys` to the end of the `import` line.
 3. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')`. *Note that you will need to replace the name of the mp3 with the name of the file you are using if it is different from the one being used here.* 
 3. Save the file and test that the program works by triggering the switch again.
@@ -153,11 +151,15 @@ with picamera.PiCamera() as camera:
             time.sleep(10)
             pic += 1
         time.sleep(0.01)
-```        
+```   
+
+Run your code and let your hamster loose. When the the program is triggered by the switch the lights will go into disco mode on the Pibrella, you should hear a tune and the camera will take a picture. After a while, check the images on your Raspberry Pi and you should see some photographs of your Hamsters having a good time.
+
+![](image003.jpg)  
 
 ##Disclaimer:
 
-Adding lights and music to the party is fun, but it could keep *you* awake at night, and may become a little annoying to adults, so you might not want to keep the project turned on every night. 
+Adding lights and music to the party is fun, but it could keep *you* awake at night, and may become a little annoying to adults, so you might not want to keep your speaker turned on every night. 
 
 It may also scare hamsters of a shy disposition, and as a hamster owner you have a duty to care for the wellbeing of your hamster. [Check out the RSPCA Hamster Guide to learn more](http://www.rspca.org.uk/allaboutanimals/pets/rodents/hamsters)!
 
