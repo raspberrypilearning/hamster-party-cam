@@ -42,9 +42,13 @@ This is not the most effective trigger and may only work every now and then. A m
 
 ###Activity Checklist:
 
-1. If your hamster home includes a wheel then remove it from the cage and place it on a table, along side the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the read switch and the magnet. 
+1. If your hamster home includes a wheel then remove it from the cage and place it on a table, along side the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [read switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet. 
 
-	1[](read-switch.png)
+	![](read-switch.png)
+
+2. Then with some assitance strip the other end of the read switch of its RJ45 connector to xpose the two wires inside.
+3. Using sticky back plastic stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
+4. 
 
 ##Step 2: Create a Python program to take pictures of the hamsters
 
@@ -94,7 +98,7 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 
 	```python
 	def disco():
-	    for i in range(10):
+	    for i in range(25):
 	        result = random.choice(colours)
 	        result.on()
 	        time.sleep(0.2)
@@ -146,8 +150,9 @@ with picamera.PiCamera() as camera:
             print("Party!")
             os.system('omxplayer hamsterdance.mp3 &')
             disco()
+            time.sleep(10)
             pic += 1
-        time.sleep(0.5)
+        time.sleep(0.01)
 ```        
 
 ##Disclaimer:
