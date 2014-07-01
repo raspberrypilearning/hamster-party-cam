@@ -67,6 +67,8 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
 6. To test that your program works, click on **File** and **Run Module**, then touch the tin foil a few times. To end the program press **CTRL** and **C** on the keyboard at the same time.
 7. Look in the hamster folder or directory by navigating in the Main Menu to **Accessories** and **File Manager**, then double click the hamster folder icon. You should see some image files.
 
+	![](hamster-party.png)
+
 ##Step 3: Get the party started with lights!
 
 We can add extra fun to the Python program that uses more features of the Pibrella board. For example, why not trigger the lights to come on in disco mode when a hamster triggers the switch?
