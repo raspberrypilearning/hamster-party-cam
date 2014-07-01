@@ -22,7 +22,7 @@ Phew; that is a fair bit of setup, but it will be worth it in the end.
 
 We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a trigger to make a program run, in order to take pictures of the party. 
 
-###Activity checklist:
+###Option 1:
 
 1. Plug one end of a male to male jumper wire into the input socket labelled 'A' on your Pibrella.
 
@@ -40,7 +40,7 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 This is not the most effective trigger and may only work every now and then. A much more effective trigger lies in the use of the hamster wheel and a cheap [wind speed sensor](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf).
 
-###Activity Checklist:
+###Option 2:
 
 1. If your hamster home includes a wheel then remove it from the cage and place it on a table, along side the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [read switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet. 
 
@@ -54,7 +54,7 @@ This is not the most effective trigger and may only work every now and then. A m
 
 With a Pi camera connected and a pressure sensitive switch attached to the Pibrella board, you can now write a program in Python to detect movement and take a picture.
 
-###Activity checklist:
+###Activity Checklist:
 
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 2. Then type `sudo idle &` and press **enter** to load the Python environment IDLE.
