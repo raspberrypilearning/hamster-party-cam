@@ -48,7 +48,6 @@ This is not the most effective trigger and may only work every now and then. A m
 
 2. Then with some assitance strip the other end of the read switch of its RJ45 connector to xpose the two wires inside.
 3. Using sticky back plastic stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
-4. 
 
 	![](cage-setup.jpg)
 
