@@ -51,10 +51,9 @@ This is not the most effective trigger and may only work every now and then. A m
 	![](wires.jpg)
 
 3. Using sticky back plastic, stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
-4. Finally u
-5. Next, connect the wires from the read switch to seperate crocodile clip cables.
-6. Connect the other end of the crocodile cables to the end of two separate male to male jumper wires.
-5. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not mater which way around as long as they are both connected to 'A'.
+4. Next, connect the wires from the read switch to seperate crocodile clip cables.
+5. Connect the other end of the crocodile cables to the end of two separate male to male jumper wires.
+6. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not mater which way around as long as they are both connected to 'A'.
 
 	![](cage-setup.JPG)
 
@@ -86,8 +85,6 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
 5. Save your work by clicking on **File** and **Save**.
 6. To test that your program works, click on **File** and **Run Module**, then touch the tin foil a few times. To end the program press **CTRL** and **C** on the keyboard at the same time.
 7. Look in the hamster folder or directory by navigating in the Main Menu to **Accessories** and **File Manager**, then double click the hamster folder icon. You should see some image files.
-
-	![](hamster-party.png)
 
 ##Step 3: Get the party started with lights!
 
