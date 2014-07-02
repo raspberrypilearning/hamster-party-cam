@@ -46,8 +46,15 @@ This is not the most effective trigger and may only work every now and then. A m
 
 	![](read-switch.png)
 
-2. Then with some assitance strip the other end of the read switch of its RJ45 connector to xpose the two wires inside.
-3. Using sticky back plastic stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
+2. Then with some assitance strip the other end of the read switch of its RJ45 connector to expose the two wires inside. These will be used to connect the read switch to your pibrella.
+
+	![](wires.jpg)
+
+3. Using sticky back plastic, stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
+4. Finally u
+5. Next, connect the wires from the read switch to seperate crocodile clip cables.
+6. Connect the other end of the crocodile cables to the end of two separate male to male jumper wires.
+5. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not mater which way around as long as they are both connected to 'A'.
 
 	![](cage-setup.JPG)
 
