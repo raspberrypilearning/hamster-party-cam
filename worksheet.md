@@ -28,15 +28,15 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 	![](images/jumper-wire.jpg)
 
-2. Next, connect the other end of the jumper wire to a crocodile cable.
+1. Next, connect the other end of the jumper wire to a crocodile cable.
 
 	![](images/crocodile-cable.png)
 
-3. Connect the other end of the crocodile cable to the hamster cage.
+1. Connect the other end of the crocodile cable to the hamster cage.
 
 	![](images/cage-connector.png)
 
-4. When the hamster touches the clip, it will trigger the camera to take a photo, so make sure you put it somewhere in shot of the camera!
+1. When the hamster touches the clip, it will trigger the camera to take a photo, so make sure you put it somewhere in shot of the camera!
 
 This is not the most effective trigger and may only work every now and then. A much more effective trigger lies in the use of the hamster wheel and a cheap [wind speed sensor](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf).
 
@@ -46,14 +46,14 @@ This is not the most effective trigger and may only work every now and then. A m
 
 	![](images/read-switch.png)
 
-2. Then with some assitance strip the other end of the read switch of its RJ45 connector to expose the two wires inside. These will be used to connect the read switch to your pibrella.
+1. Then with some assitance strip the other end of the read switch of its RJ45 connector to expose the two wires inside. These will be used to connect the read switch to your pibrella.
 
 	![](images/wires.jpg)
 
-3. Using sticky back plastic, stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
-4. Next, connect the wires from the read switch to seperate crocodile clip cables.
-5. Connect the other end of the crocodile cables to the end of two separate male to male jumper wires.
-6. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not mater which way around as long as they are both connected to 'A'.
+1. Using sticky back plastic, stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
+1. Next, connect the wires from the read switch to seperate crocodile clip cables.
+1. Connect the other end of the crocodile cables to the end of two separate male to male jumper wires.
+1. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not mater which way around as long as they are both connected to 'A'.
 
 	![](images/cage-setup.jpg)
 
@@ -64,10 +64,10 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
 ### Activity Checklist:
 
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
-2. Then type `sudo idle &` and press **enter** to load the Python environment IDLE.
-2. Click on **File** and **New Window** to open a new text editor file.
-3. Save the file by clicking on **File** and **Save As**; name the file `hamster-party` and click **Ok**.
-4. Now type the following code into your hamster file:
+1. Then type `sudo idle &` and press **enter** to load the Python environment IDLE.
+1. Click on **File** and **New Window** to open a new text editor file.
+1. Save the file by clicking on **File** and **Save As**; name the file `hamster-party` and click **Ok**.
+1. Now type the following code into your hamster file:
 
 	```python
 	import pibrella, picamera, time
@@ -82,9 +82,9 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
             	pic += 1
         	time.sleep(0.2)
 	```
-5. Save your work by clicking on **File** and **Save**.
-6. To test that your program works, click on **File** and **Run Module**, then touch the tin foil a few times. To end the program press **CTRL** and **C** on the keyboard at the same time.
-7. Look in the hamster folder or directory by navigating in the Main Menu to **Accessories** and **File Manager**, then double click the hamster folder icon. You should see some image files.
+1. Save your work by clicking on **File** and **Save**.
+1. To test that your program works, click on **File** and **Run Module**, then touch the tin foil a few times. To end the program press **CTRL** and **C** on the keyboard at the same time.
+1. Look in the hamster folder or directory by navigating in the Main Menu to **Accessories** and **File Manager**, then double click the hamster folder icon. You should see some image files.
 
 ## Step 3: Get the party started with lights!
 
@@ -93,13 +93,13 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 ### Activity checklist:
 
 1. Make sure that `hamster-party.py` is open in a text editor.
-2. Add `random` to the end of `import pibrella, picamera, time` in the first line.
-3. Underneath this, make a space to add a list for the LED lights on Pibrella like this:
+1. Add `random` to the end of `import pibrella, picamera, time` in the first line.
+1. Underneath this, make a space to add a list for the LED lights on Pibrella like this:
 
 	```python
 	colours = [pibrella.light.red, pibrella.light.amber, pibrella.light.green]
 	```
-4. Below the list create a disco function by typing the following:
+1. Below the list create a disco function by typing the following:
 
 	```python
 	def disco():
@@ -109,11 +109,11 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 	        time.sleep(0.2)
 	        result.off()
 	 ```
-5. Then navigate to the line `print("Party!")` and add `disco()` underneath the line.
+1. Then navigate to the line `print("Party!")` and add `disco()` underneath the line.
 
 	![](images/hamster-code-2.png)
 
-6. Save and test your code. Your pressure sensitive switch should now trigger some disco lights on the Pibrella. The hamsters will love that!
+1. Save and test your code. Your pressure sensitive switch should now trigger some disco lights on the Pibrella. The hamsters will love that!
 
 ## Step 4: Hamsters need music to dance!
 
@@ -122,9 +122,9 @@ Finally, let's trigger some tunes for the hamsters to dance to by downloading a 
 ### Activity checklist:
 
 1. First you will need to put a a sound file onto your Raspberry Pi. You could create one in Sonic Pi, or you could add a sound file by transferring a sound file from a computer with a USB memory stick.
-2. Add `os, sys` to the end of the `import` line.
-3. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')`. *Note that you will need to replace the name of the mp3 with the name of the file you are using if it is different from the one being used here.*
-3. Save the file and test that the program works by triggering the switch again.
+1. Add `os, sys` to the end of the `import` line.
+1. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')`. *Note that you will need to replace the name of the mp3 with the name of the file you are using if it is different from the one being used here.*
+1. Save the file and test that the program works by triggering the switch again.
 
 ## Final project code:
 
