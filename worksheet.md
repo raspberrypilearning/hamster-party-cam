@@ -30,11 +30,11 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 1. Next, connect the other end of the jumper wire to a crocodile cable.
 
-	![](images/crocodile-cable.png)
+	![](images/jumper-croc.jpg)
 
 1. Connect the other end of the crocodile cable to the hamster cage.
 
-	![](images/cage-connector.png)
+	![](images/cage-connector.jpg)
 
 1. When the hamster touches the clip, it will trigger the camera to take a photo, so make sure you put it somewhere in shot of the camera!
 
@@ -44,16 +44,18 @@ This is not the most effective trigger and may only work every now and then. A m
 
 1. If your hamster home includes a wheel then remove it from the cage and place it on a table, along side the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [read switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet.
 
-	![](images/read-switch.png)
-
 1. Then with some assitance strip the other end of the read switch of its RJ45 connector to expose the two wires inside. These will be used to connect the read switch to your pibrella.
 
-	![](images/wires.jpg)
+	![](images/wires.jpg) ![](images/wires-2.jpg)
 
 1. Using sticky back plastic, stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel so that it rotates around and passes the read switch. The magnet will connect the wires inside the read switch to form a connection every time it comes in contact.
 1. Next, connect the wires from the read switch to seperate crocodile clip cables.
+
+	![](images/croc-switch.jpg)
+
 1. Connect the other end of the crocodile cables to the end of two separate male to male jumper wires.
-1. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not mater which way around as long as they are both connected to 'A'.
+
+1. Finally, push the other end of the male to male jumper wires into the input sockets labelled 'A' on your Pibrella. It does not matter which way around as long as they are both connected to 'A'.
 
 	![](images/cage-setup.jpg)
 
@@ -64,9 +66,10 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
 ### Activity Checklist:
 
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
-1. Then type `sudo idle &` and press **enter** to load the Python environment IDLE.
+1. Then type `touch hamster-party.py` and **enter**
+1. Next type `sudo idle3 hamster-party.py &` and press **enter** to load the Python environment IDLE.
 1. Click on **File** and **New Window** to open a new text editor file.
-1. Save the file by clicking on **File** and **Save As**; name the file `hamster-party` and click **Ok**.
+1. Save the file by clicking on **File** and **Save**.
 1. Now type the following code into your hamster file:
 
 	```python
@@ -156,6 +159,6 @@ with picamera.PiCamera() as camera:
         time.sleep(0.01)
 ```
 
-Run your code and let your hamster loose. When the the program is triggered by the switch the lights will go into disco mode on the Pibrella, you should hear a tune and the camera will take a picture. After a while, check the images on your Raspberry Pi and you should see some photographs of your Hamsters having a good time.
+Run your code and let your hamster loose. When the the program is triggered by the switch the lights will go into disco mode on the Pibrella, you should hear a tune and the camera will take a picture. After a while, check the images on your Raspberry Pi and you should see some photographs of your Hamsters having a good time. Here is an example of an image taken by hamster party cam:
 
 ![](images/image003.jpg)
