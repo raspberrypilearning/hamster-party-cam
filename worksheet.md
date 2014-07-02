@@ -1,8 +1,8 @@
 #Hamster Party Cam
 
-##Introduction
-
-*"Hamsters are nocturnal, which means that they sleep in the day time and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!" - Violet*
+> Hamsters are nocturnal, which means that they sleep in the day time and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
+>
+> ~ Violet
 
 We need to find some way of being able to see what the hamsters are up to during the night. I suspect they are partying.
 
@@ -158,27 +158,4 @@ with picamera.PiCamera() as camera:
 
 Run your code and let your hamster loose. When the the program is triggered by the switch the lights will go into disco mode on the Pibrella, you should hear a tune and the camera will take a picture. After a while, check the images on your Raspberry Pi and you should see some photographs of your Hamsters having a good time.
 
-![](images/image003.jpg)  
-
-##Disclaimer:
-
-Adding lights and music to the party is fun, but it could keep *you* awake at night, and may become a little annoying to adults, so you might not want to keep your speaker turned on every night.
-
-It may also scare hamsters of a shy disposition, and as a hamster owner you have a duty to care for the wellbeing of your hamster. [Check out the RSPCA Hamster Guide to learn more](http://www.rspca.org.uk/allaboutanimals/pets/rodents/hamsters)!
-
-##Community:
-
-Based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet.
-It's been a pleasure to make this Raspberry Pi poster project idea a reality.
-
-![](images/poster.jpg)
-
-##Licence:
-
-Unless otherwise specified, everything in this repository is covered by the following licence:
-
-![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
-
-***Hamster Party Cam*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-
-Based on a work at https://github.com/raspberrypilearning/hamster-party-cam
+![](images/image003.jpg)
