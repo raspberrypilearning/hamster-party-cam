@@ -1,4 +1,4 @@
-#Hamster Party Cam
+# Hamster Party Cam
 
 > Hamsters are nocturnal, which means that they sleep in the day time and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
 >
@@ -8,7 +8,7 @@ We need to find some way of being able to see what the hamsters are up to during
 
 In this project, we are going to use a Raspberry Pi camera and a Pibrella with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
 
-##Step 0: Setting up your Raspberry Pi, Pi Camera and Pibrella
+## Step 0: Setting up your Raspberry Pi, Pi Camera and Pibrella
 
 You will need to set up your Raspberry Pi to take part in this activity. See the [Raspberry Pi Start Guide](http://www.raspberrypi.org/help/quick-start-guide/) to get you up and running.
 
@@ -18,11 +18,11 @@ Next, you will need a Pibrella board attached to the GPIO pins on your Raspberry
 
 Phew; that is a fair bit of setup, but it will be worth it in the end.
 
-##Step 1: Create a trigger switch
+## Step 1: Create a trigger switch
 
 We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a trigger to make a program run, in order to take pictures of the party.
 
-###Option 1:
+### Option 1:
 
 1. Plug one end of a male to male jumper wire into the input socket labelled 'A' on your Pibrella.
 
@@ -40,7 +40,7 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 This is not the most effective trigger and may only work every now and then. A much more effective trigger lies in the use of the hamster wheel and a cheap [wind speed sensor](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf).
 
-###Option 2:
+### Option 2:
 
 1. If your hamster home includes a wheel then remove it from the cage and place it on a table, along side the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [read switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet.
 
@@ -57,11 +57,11 @@ This is not the most effective trigger and may only work every now and then. A m
 
 	![](images/cage-setup.jpg)
 
-##Step 2: Create a Python program to take pictures of the hamsters
+## Step 2: Create a Python program to take pictures of the hamsters
 
 With a Pi camera connected and a pressure sensitive switch attached to the Pibrella board, you can now write a program in Python to detect movement and take a picture.
 
-###Activity Checklist:
+### Activity Checklist:
 
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 2. Then type `sudo idle &` and press **enter** to load the Python environment IDLE.
@@ -86,11 +86,11 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
 6. To test that your program works, click on **File** and **Run Module**, then touch the tin foil a few times. To end the program press **CTRL** and **C** on the keyboard at the same time.
 7. Look in the hamster folder or directory by navigating in the Main Menu to **Accessories** and **File Manager**, then double click the hamster folder icon. You should see some image files.
 
-##Step 3: Get the party started with lights!
+## Step 3: Get the party started with lights!
 
 We can add extra fun to the Python program that uses more features of the Pibrella board. For example, why not trigger the lights to come on in disco mode when a hamster triggers the switch?
 
-###Activity checklist:
+### Activity checklist:
 
 1. Make sure that `hamster-party.py` is open in a text editor.
 2. Add `random` to the end of `import pibrella, picamera, time` in the first line.
@@ -115,18 +115,18 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 
 6. Save and test your code. Your pressure sensitive switch should now trigger some disco lights on the Pibrella. The hamsters will love that!
 
-##Step 4: Hamsters need music to dance!
+## Step 4: Hamsters need music to dance!
 
 Finally, let's trigger some tunes for the hamsters to dance to by downloading a sound file like an `.mp3` or `.wav` and playing it using omxplayer. You can use your own sound files if you transfer them to your Raspberry Pi; just change the name of the file in the code.
 
-###Activity checklist:
+### Activity checklist:
 
 1. First you will need to put a a sound file onto your Raspberry Pi. You could create one in Sonic Pi, or you could add a sound file by transferring a sound file from a computer with a USB memory stick.
 2. Add `os, sys` to the end of the `import` line.
 3. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')`. *Note that you will need to replace the name of the mp3 with the name of the file you are using if it is different from the one being used here.*
 3. Save the file and test that the program works by triggering the switch again.
 
-##Final project code:
+## Final project code:
 
 Your final project code should look something like this:
 
