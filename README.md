@@ -14,11 +14,17 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 
 ### Hardware
 
-- ?
+- 1 x Raspberry Pi Camera Module
+- 1 x Pibrella
+- 2 x Crocodile clip cables
+- 2 x male to male jumper wires
+- 1 x [Wind speed sensor](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf)
+- 1 x Hamster cage with hamster wheel
 
 ### Software
 
-- ?
+- python3-picamera
+- python 3 pibrella library
 
 ## Steps
 
