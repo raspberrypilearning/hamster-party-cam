@@ -67,7 +67,7 @@ With a Pi camera connected and a pressure sensitive switch attached to the Pibre
 
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 1. Then type `touch hamster-party.py` and **enter**
-1. Next type `sudo idle3 hamster-party.py &` and press **enter** to load the Python environment IDLE.
+1. Next type `sudo idle3 hamster-party.py &` and press **enter** to load the Python environment IDLE. The `&` is very important, make sure that you include it!
 1. Click on **File** and **New Window** to open a new text editor file.
 1. Save the file by clicking on **File** and **Save**.
 1. Now type the following code into your hamster file:
@@ -127,6 +127,8 @@ Finally, let's trigger some tunes for the hamsters to dance to by downloading a 
 1. First you will need to put a a sound file onto your Raspberry Pi. You could create one in Sonic Pi, or you could add a sound file by transferring a sound file from a computer with a USB memory stick.
 1. Add `os, sys` to the end of the `import` line.
 1. Now navigate to the line `print("party!")` and underneath add `os.system('omxplayer hamsterdance.mp3 &')`. *Note that you will need to replace the name of the mp3 with the name of the file you are using if it is different from the one being used here.*
+1. Add a pause the same length as your tune using `time.sleep()` For example my tune is 10 seconds long so I've added `time.sleep(10)` underneath `disco()`.
+1. Change `time.sleep(0.2)` to `time.sleep(0.01)` at the bottom of the while loop.
 1. Save the file and test that the program works by triggering the switch again.
 
 ## Final project code:
@@ -139,7 +141,7 @@ import pibrella, picamera, time, random, os, sys
 colours = [pibrella.light.red, pibrella.light.amber, pibrella.light.green]
 
 def disco():
-	for i  in range(10):
+	for i  in range(25):
     	result = random.choice(colours)
     	result.on()
     	time.sleep(0.2)
