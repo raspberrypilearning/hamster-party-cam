@@ -25,7 +25,7 @@ sudo pip-3.2 install pibrella
 
 Test you have everything you need by entering the following command:
 
-```python
+```bash
 sudo python3 -c "import picamera, pibrella"
 ```
 
