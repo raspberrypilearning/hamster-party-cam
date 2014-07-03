@@ -19,7 +19,7 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 - 2 x Crocodile clip cables (e.g. from ?)
 - 2 x male-to-male jumper wires (e.g. from [Pimoroni](http://shop.pimoroni.com/products/jumper-jerky))
 - 1 x Wind speed sensor (e.g from [Maplin](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf))
-1 x speaker with 3.5mm audio jack (e.g from ?)
+- 1 x speaker with 3.5mm audio jack (e.g from ?)
 
 ### Software
 
