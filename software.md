@@ -4,7 +4,7 @@ You'll need to make sure you have the following packages installed to proceed wi
 
 You'll need to be online to install packages.
 
-First update and upgrade your system. Enter the following commands in to the terminal:
+First, update and upgrade your system. Enter the following commands into the terminal:
 
 ```bash
 sudo apt-get update
