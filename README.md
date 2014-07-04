@@ -1,6 +1,6 @@
 # Hamster Party Cam
 
-> Hamsters are nocturnal, which means that they sleep in the day time and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
+> Hamsters are nocturnal, which means that they sleep in the daytime and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
 >
 > ~ Violet
 
@@ -16,9 +16,9 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 
 - 1 x [Raspberry Pi Camera Module](http://www.raspberrypi.org/product/camera-module/)
 - 1 x [Pibrella](http://pibrella.com/) (e.g. from [Pimoroni](http://shop.pimoroni.com/products/pibrella) or [Cyntech](http://shop.cyntech.co.uk/products/pibrella))
-- 2 x Crocodile clip cables (e.g. from ?)
+- 2 x crocodile clip cables (e.g. from ?)
 - 2 x male-to-male jumper wires (e.g. from [Pimoroni](http://shop.pimoroni.com/products/jumper-jerky))
-- 1 x Wind speed sensor (e.g from [Maplin](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf))
+- 1 x wind speed sensor (e.g from [Maplin](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf))
 - 1 x speaker with 3.5mm audio jack (e.g from ?)
 
 ### Software
@@ -26,12 +26,12 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 - python3-picamera
 - python3-pibrella
 
-See more information on checking you have these packages installed, and how to install them on the [software installation](software.md) page.
+See more information on checking you have these packages installed, and how to install them, on the [software installation](software.md) page.
 
 ### Extras
 
-- 1 x Hamster cage with hamster wheel
-- 1 x Hamster
+- 1 x hamster cage with hamster wheel
+- 1 x hamster
 
 ## Steps
 
@@ -48,7 +48,7 @@ See more information on checking you have these packages installed, and how to i
 
 ## Disclaimer
 
-Adding lights and music to the party is fun, but it could keep *you* awake at night, and may become a little annoying to adults, so you might not want to keep your speaker turned on every night.
+Adding lights and music to the party is fun but it could keep *you* awake at night, and may become a little annoying to adults, so you might not want to keep your speaker turned on every night.
 
 It may also scare hamsters of a shy disposition, and as a hamster owner you have a duty to care for the wellbeing of your hamster. [Check out the RSPCA Hamster Guide to learn more](http://www.rspca.org.uk/allaboutanimals/pets/rodents/hamsters)!
 
