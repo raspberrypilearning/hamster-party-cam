@@ -45,6 +45,7 @@ See more information on checking you have these packages installed, and how to i
 
 - [The worksheet](worksheet.md)
 - (Optional) Final version of Python code [hamster-party.py](code/hamster-party.py)
+    - Download to your Pi with `wget http://goo.gl/2d67Wo -O hamster-party.py --no-check-certificate`
 
 ## Disclaimer
 
