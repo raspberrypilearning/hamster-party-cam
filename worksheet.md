@@ -62,7 +62,7 @@ This is not the most effective trigger and may only work every now and then. A m
 
 ## Step 2: Create a Python program to take pictures of the hamsters
 
-With a Pi camera connected and a trigger switched all set up with the Pibrella board, you can now write a program in Python to detect movement and take a picture.
+With a Pi camera connected and a trigger switch all set up with the Pibrella board, you can now write a program in Python to detect movement and take a picture.
 
 ### Activity checklist:
 
