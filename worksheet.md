@@ -42,15 +42,15 @@ This is not the most effective trigger and may only work every now and then. A m
 
 ### Option 2:
 
-1. If your hamster home includes a wheel, remove it from the cage and place it on a table alongside the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [read switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet.
+1. If your hamster home includes a wheel, remove it from the cage and place it on a table alongside the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [reed switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet.
 
-1. Then, with some assistance, remove the RJ45 connector at the end of the read switch to expose the two wires inside. These will be used to connect the read switch to your Pibrella.
+1. Then, with some assistance, remove the RJ45 connector at the end of the reed switch to expose the two wires inside. These will be used to connect the reed switch to your Pibrella.
 
 	![](images/wires.jpg) ![](images/wires-2.jpg)
 
-1. Using sticky back plastic, stick the read switch to the centre of the hamster wheel and the magnet to the outer section of the wheel, so that it rotates around and passes the read switch. Every time the magnet comes into contact with the read switch, it will connect the wires inside to form a connection.
+1. Using sticky back plastic, stick the reed switch to the centre of the hamster wheel and the magnet to the outer section of the wheel, so that it rotates around and passes the reed switch. Every time the magnet comes into contact with the reed switch, it will connect the wires inside to form a connection.
  
-1. Next, connect the wires from the read switch to separate crocodile clip cables.
+1. Next, connect the wires from the reed switch to separate crocodile clip cables.
 
 	![](images/croc-switch.jpg)
 
@@ -62,7 +62,7 @@ This is not the most effective trigger and may only work every now and then. A m
 
 ## Step 2: Create a Python program to take pictures of the hamsters
 
-With a Pi camera connected and a trigger switched all set up with the Pibrella board, you can now write a program in Python to detect movement and take a picture.
+With a Pi camera connected and a trigger switch all set up with the Pibrella board, you can now write a program in Python to detect movement and take a picture.
 
 ### Activity checklist:
 
