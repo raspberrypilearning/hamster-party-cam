@@ -140,7 +140,14 @@ Run your code and let your hamster loose. When the the program is triggered by t
 
 ![](images/image003.jpg)
 
-What's next?
+## What's next?
 - Can you add to this system to feed your hamster too?
 - Can you record how many turns the hamster wheel makes, to find out how active your hamster is?
 - Can you think of other practical applications for sensors that trigger events? 
+
+## Community
+
+Based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet.
+It's been a pleasure to make this Raspberry Pi poster project idea a reality.
+
+![](images/poster.jpg)
