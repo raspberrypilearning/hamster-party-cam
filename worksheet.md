@@ -1,23 +1,3 @@
-# Hamster Party Cam
-
-> Hamsters are nocturnal, which means that they sleep in the daytime and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
->
-> ~ Violet
-
-We need to find some way of being able to see what the hamsters are up to during the night. I suspect they are partying.
-
-In this project, we are going to use a Raspberry Pi camera and a Pibrella with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
-
-## Step 0: Setting up your Raspberry Pi, Pi Camera and Pibrella
-
-You will need to set up your Raspberry Pi to take part in this activity. See the [Raspberry Pi Start Guide](http://www.raspberrypi.org/help/quick-start-guide/) to get you up and running.
-
-You will also require a Raspberry Pi camera module connected to your Raspberry Pi. See the [Raspberry Pi Camera Guide](http://www.raspberrypi.org/help/camera-module-setup/) to connect your camera to your Raspberry Pi. Then follow the [Raspberry Pi Camera Setup Tutorial](https://github.com/raspberrypilearning/python-picamera-setup) to enable the camera, test it, and download the `picamera` library.
-
-Next, you will need a Pibrella board attached to the GPIO pins on your Raspberry Pi. See the [Pibrella](https://github.com/raspberrypilearning/pibrella-setup) guide to learn how to add the board and download the `pibrella` library.
-
-Phew; that is a fair bit of setup, but it will be worth it in the end.
-
 ## Step 1: Create a trigger switch
 
 We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a trigger to make a program run, in order to take pictures of the party.
@@ -64,8 +44,6 @@ This is not the most effective trigger and may only work every now and then. A m
 
 With a Pi camera connected and a trigger switch all set up with the Pibrella board, you can now write a program in Python to detect movement and take a picture.
 
-### Activity checklist:
-
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 1. Then type `touch hamster-party.py` and press **enter**.
 1. Next, type `sudo idle3 hamster-party.py &` and press **enter** to load the Python environment IDLE. The `&` is very important; make sure that you include it!
@@ -94,8 +72,6 @@ With a Pi camera connected and a trigger switch all set up with the Pibrella boa
 
 We can add extra fun to the Python program that uses more features of the Pibrella board. For example, why not trigger the lights to come on in disco mode when a hamster triggers the switch?
 
-### Activity checklist:
-
 1. Make sure that `hamster-party.py` is open in a text editor.
 1. Add `random` to the end of `import pibrella, picamera, time` in the first line.
 1. Underneath this, make a space to add a list for the LED lights on Pibrella like this:
@@ -122,8 +98,6 @@ We can add extra fun to the Python program that uses more features of the Pibrel
 ## Step 4: Hamsters need music to dance!
 
 Finally, let's trigger some tunes for the hamsters to dance to by downloading a sound file like an `.mp3` or `.wav` and playing it using omxplayer. You can use your own sound files if you transfer them to your Raspberry Pi; just change the name of the file in the code.
-
-### Activity checklist:
 
 1. First you will need to put a a sound file onto your Raspberry Pi. You could create one in Sonic Pi, or you could add a sound file by transferring a sound file from a computer with a USB memory stick.
 1. Add `os, sys` to the end of the `import` line.
@@ -165,3 +139,8 @@ with picamera.PiCamera() as camera:
 Run your code and let your hamster loose. When the the program is triggered by the switch the lights will go into disco mode on the Pibrella, you should hear a tune, and the camera will take a picture. After a while, check the images on your Raspberry Pi and you should see some photographs of your hamsters having a good time. Here is an example of an image taken by hamster party cam:
 
 ![](images/image003.jpg)
+
+What's next?
+- Can you add to this system to feed your hamster too?
+- Can you record how many turns the hamster wheel makes, to find out how active your hamster is?
+- Can you think of other practical applications for sensors that trigger events? 
