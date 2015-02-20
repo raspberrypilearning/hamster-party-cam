@@ -46,7 +46,7 @@ With a Pi camera connected and a trigger switch all set up with the Pibrella boa
 
 1. Open an LXTerminal window, type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 1. Then type `touch hamster-party.py` and press **enter**.
-1. Next, type `sudo idle3 hamster-party.py &` and press **enter** to load the Python environment IDLE. The `&` is very important; make sure that you include it!
+1. Next, type `sudo idle3 hamster-party.py &` and press **enter** to load the Python 3 environment IDLE3. The `&` is very important; make sure that you include it!
 1. Click on **File** and **New Window** to open a new text editor file.
 1. Save the file by clicking on **File** and **Save**.
 1. Now type the following code into your hamster file:
