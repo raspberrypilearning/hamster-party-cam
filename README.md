@@ -15,7 +15,7 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 ### Hardware
 
 - 1 x [Raspberry Pi Camera Module](http://www.raspberrypi.org/product/camera-module/)
-- 1 x [Pibrella](http://pibrella.com/) (e.g. from [Pimoroni](http://shop.pimoroni.com/products/pibrella) or [Cyntech](http://shop.cyntech.co.uk/products/pibrella))
+- 1 x [Pibrella](http://pibrella.com/) (e.g. from [Cyntech](http://shop.cyntech.co.uk/products/pibrella))
 - 2 x crocodile clip cables (e.g. from [Amazon](http://www.amazon.co.uk/20pcs-Double-ended-Crocodile-Alligator-Jumper/dp/B00K685PZ6/))
 - 2 x male-to-male jumper wires (e.g. from [Pimoroni](http://shop.pimoroni.com/products/jumper-jerky))
 - 1 x wind speed sensor (e.g from [Maplin](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf))
