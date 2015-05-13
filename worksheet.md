@@ -8,7 +8,7 @@ If you haven't already done so, please see the [hardware information](https://ww
 
 ## Create a trigger switch
 
-We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a trigger to make a program run, in order to take pictures of the party.
+We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. No doubt they are throwing out some robot dance moves in your absence! So you will need to create a trigger to make a program run, in order to take pictures of the party.
 
 ### Option 1:
 
