@@ -2,6 +2,10 @@
 
 In this project, we are going to use a Raspberry Pi camera and a Pibrella with a Raspberry Pi to take pictures and video of our hamsters, triggered by their movement. This will help us see what they are getting up to overnight! 
 
+## Set up hardware
+
+If you haven't already done so, please see the [hardware information](https://www.raspberrypi.org/learning/hamster-party-cam/requirements/hardware/) page for instructions on setting up your camera module and Pibrella. 
+
 ## Create a trigger switch
 
 We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. (No doubt they are throwing out some robot dance moves in your absence.) So you will need to create a trigger to make a program run, in order to take pictures of the party.
