@@ -155,7 +155,7 @@ Run your code and let your hamster loose. When the the program is triggered by t
 
 ## Community
 
-Based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet.
+This project is based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet.
 It's been a pleasure to make this Raspberry Pi poster project idea a reality.
 
 ![](images/poster.jpg)
