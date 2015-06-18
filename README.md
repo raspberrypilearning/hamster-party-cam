@@ -1,5 +1,7 @@
 # Hamster Party Cam
 
+![](cover.png)
+
 > Hamsters are nocturnal, which means that they sleep in the daytime and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
 >
 > ~ Violet
