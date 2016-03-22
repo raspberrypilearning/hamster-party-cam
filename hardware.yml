@@ -1,18 +1,12 @@
 - name: 1 x Raspberry Pi Camera Module
   img: camera
-  url: http://www.raspberrypi.org/product/camera-module/
 - name: 1 x Pibrella
   img: pibrella
-  url: http://shop.cyntech.co.uk/products/pibrella
 - name: 2 x crocodile clips
   img: crocodile-clips
-  url: http://www.amazon.co.uk/CHIC-MALL-Double-ended-Crocodile-Alligator/dp/B00M2GD99E/
 - name: 2 x male-to-male jumper wires
   img: jumper-male-to-male
-  url: http://shop.pimoroni.com/products/jumper-jerky
 - name: 1 x wind speed sensor
   img: wind-speed-sensor
-  url: http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf
 - name: 1 x speaker with 3.5mm audio jack 
   img: speaker
-  url: http://www.amazon.co.uk/XMI-X-Mini-Generation-Capsule-Speaker/dp/B001UEBN42
