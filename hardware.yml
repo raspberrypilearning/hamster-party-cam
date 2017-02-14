@@ -1,12 +1,12 @@
 - name: 1 x Raspberry Pi Camera Module
   img: camera
-- name: 1 x Pibrella
-  img: pibrella
+- name: 1 x Explorer HAT
+  img: explorer-hat
 - name: 2 x crocodile clips
   img: crocodile-clips
 - name: 2 x male-to-male jumper wires
   img: jumper-male-to-male
-- name: 1 x wind speed sensor
+- name: 1 x wind speed sensor 
   img: wind-speed-sensor
-- name: 1 x speaker with 3.5mm audio jack 
+- name: 1 x speaker with 3.5mm audio jack
   img: speaker

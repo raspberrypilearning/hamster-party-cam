@@ -4,7 +4,7 @@
 
 We need to find some way of being able to see what the hamsters are up to during the night. I suspect they are partying.
 
-In this project, we are going to use a Raspberry Pi camera and a Pibrella with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
+In this project, we are going to use a Raspberry Pi camera and an Explorer HAT with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
 
 ## Community
 This project is based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet.

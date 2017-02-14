@@ -1,42 +1,41 @@
 # Software installation
 
-You'll need to make sure you have the following packages installed to proceed with the workshop.
+You'll need to make sure you have the following packages installed to proceed with your hamster party cam.
 
 You'll need to be online to install packages.
 
-First, update and upgrade your system. You can do this by opening **Terminal** by clicking on **Main Menu**, **Accessories** and then clicking on the **Terminal** icon. Enter the following commands into the terminal:
+1. First, update and upgrade your system. You can do this by opening the **terminal** by clicking on the terminal icon:
 
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-```
+  ![Terminal](images/terminal.png)
 
-Now install the packages you'll need:
+1. Now type the following commands to ensure you are up to date:
 
-```bash
-sudo apt-get install python3-picamera python3-pip
-```
+  ```bash
+  sudo apt-get update
+  sudo apt-get upgrade
+  ```
 
-You'll also need to install the Pibrella library from pip:
+1. Now install the packages you'll need:
 
-```bash
-sudo pip-3.2 install pibrella
-```
+  ```bash
+  sudo apt-get install python3-picamera python3-pip
+  ```
 
-Test you have everything you need by entering the following command:
+1. You'll also need to install the Explorer HAT library:
 
-```bash
-sudo python3 -c "import picamera, pibrella"
-```
+  ```bash
+  sudo apt-get install python3-explorerhat
+  ```
 
-This should show the following:
+1. Check you have the Explorer HAT installed correctly by running the following command:
 
-```
-Pibrella exiting cleanly, please wait...
-Stopping flashy things...
-Stopping user tasks...
-Cleaning up...
-Goodbye!
-```
+  ```bash
+  sudo python3 -c "import picamera, explorerhat"
+  ```
+  This should show the following:
 
-If you get an error saying `No module named` then check you entered the commands above correctly.
+  ```python
+  Explorer HAT Pro detected...
+  ```
+
+  If you get an error saying `No module named` then check you entered the commands above correctly.
