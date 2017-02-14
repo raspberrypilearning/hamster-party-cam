@@ -10,7 +10,7 @@ If you haven't already done so, please see the [hardware information](hardware.m
 
 We only want the Raspberry Pi to take pictures of the hamsters when they are out and having a good time. No doubt they are throwing out some robot dance moves in your absence! So you will need to create a trigger to make a program run, in order to take pictures of the party.
 
-1. Remove the hamster wheel from the cage and place it on a table alongside the wind speed sensor. You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [reed switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet.
+1. Remove the hamster wheel from the cage and place it on a table alongside the [wind speed sensor](https://www.raspberrypi.org/learning/sensing-the-weather/guides/wind_speed/). You may need to locate an adult to help you unscrew the wind speed sensor case, and remove the [reed switch](http://upload.wikimedia.org/wikipedia/commons/b/bd/Reed_switch_%28aka%29.jpg) and the magnet.
 
 1. Then, with some assistance, remove the RJ45 connector at the end of the reed switch to expose the two wires inside. These will be used to connect the reed switch to your Explorer HAT.
 
@@ -45,9 +45,9 @@ With a Pi camera connected and a trigger switch all set up with the Explorer HAT
 1. Begin your code by importing the Explorer HAT Python library, the PiCamera library and the sleep function from the time library:
 
     ```python
-    import explorerhat
+		import explorerhat
 		import picamera
-    from time import sleep
+		from time import sleep
     ```
 
 1. Now add some code to take a photograph when the reed switch is triggered:
@@ -55,10 +55,10 @@ With a Pi camera connected and a trigger switch all set up with the Explorer HAT
 	```python
 	def hamster_awake(input):
     with picamera.PiCamera() as camera:
-        camera.resolution = (1024, 768)
-				camera.capture('/home/pi/hamster/image.jpg')
-				print("Party!")
-        sleep(0.2)
+			camera.resolution = (1024, 768)
+			camera.capture('/home/pi/hamster/image.jpg')
+			print("Party!")
+			sleep(0.2)
 
 	explorerhat.input.one.changed(hamster_awake)
 	```
@@ -78,20 +78,21 @@ With a Pi camera connected and a trigger switch all set up with the Explorer HAT
 	pic = 1
 
 	def hamster_awake(input):
-	    global pic
-	    with picamera.PiCamera() as camera:
-	        camera.resolution = (1024, 768)
-	        camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
-	        print("Party!")
-	        pic += 1
-	        sleep(0.2)
+		global pic
+		with picamera.PiCamera() as camera:
+			camera.resolution = (1024, 768)
+			camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
+			print("Party!")
+			pic += 1
+			sleep(0.2)
 	```
 	- `pic = 1` - initialises a counter variable with a starting value of 1
 	- `global pic` - allows us to update the variable from inside the function (to add one after a photo is taken)
+	- `%03d` and `% pic` (in the camera.capture function) tells Python to insert the value of `pic` instead of `%03d`
 	- `pic += 1` - adds one to the counter
 
 1. Save your work and then run the program again by pressing `F5`, moving the hamster wheel several times. To end the program press **CTRL** and **C** on the keyboard at the same time.
-1. Look in the hamster folder and check that multiple images have been saved.
+1. Look in the `hamster` folder and check that multiple images have been saved.
 
 ## Get the party started with lights!
 
@@ -143,7 +144,7 @@ Finally, let's trigger some tunes for the hamsters to dance to by downloading a 
 	```
 	*Note that you will need to replace the name of the mp3 with the name of the file you are using, if it is different from the one being used here.*
 
-1. Change your `sleep()` pause to be the same length as your tune. For example, my tune is 10 seconds long so I've changed to `sleep(10)`.
+1. Change your `sleep(0.2)` pause to be the same length as your tune. For example, my tune is 10 seconds long so I've changed to `sleep(10)`.
 
 1. Save the file and test that the program works by triggering the switch again.
 
@@ -176,10 +177,9 @@ def hamster_awake(input):
         camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
         print("Party!")
         disco()
-        os.system('aplay bubbling_water_1.mp3 &')
-        print("end song")
+        os.system('hamsterdance.mp3 &')
         pic += 1
-        sleep(0.2)
+        sleep(10)
 
 
 explorerhat.input.one.changed(hamster_awake)
