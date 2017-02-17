@@ -4,7 +4,7 @@ You'll need to make sure you have the following packages installed to proceed wi
 
 You'll need to be online to install packages.
 
-1. First, update and upgrade your system. You can do this by opening the **terminal** by clicking on the terminal icon:
+1. First, update and upgrade your system. You can do this by opening a **terminal window** by clicking on the terminal icon:
 
   ![Terminal](images/terminal.png)
 
