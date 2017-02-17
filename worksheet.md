@@ -40,7 +40,7 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 
     ![Open Python](images/python3-app-menu.png)
 
-1. Click `File` > `New File` to create a blank file. Save your file into the `hamster` directory you just created and call it `hamster_party.py`.
+1. Click **File** > **New File** to create a blank file. Save your file into the `hamster` directory you just created and call it `hamster_party.py`.
 
 1. Begin your code by importing the Explorer HAT Python library, the PiCamera library and the sleep function from the time library:
 
