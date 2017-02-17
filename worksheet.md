@@ -70,7 +70,7 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 	- `sleep(0.2)`- wait 0.2 seconds between pictures
 	- `explorerhat.input.one.changed(hamster_awake)` - when input 1 is activated, call the `hamster_awake` function
 
-1. Save and run your code by pressing `F5`. Check that when you turn the wheel, a picture is taken and saved within the `hamster` directory. Can you spot a problem with this code? If your hamster moves around more than once, the picture overwrites each time.
+1. Save and run your code by pressing **F5**. Check that when you turn the wheel, a picture is taken and saved within the `hamster` directory. Can you spot a problem with this code? If your hamster moves around more than once, the picture overwrites each time.
 
 1. We would like to be able to save lots of different hamster pictures, so let's add a variable so that we can save the pictures with an ever increasing number in the filename. We will create a variable called `pic` to do this:
 
