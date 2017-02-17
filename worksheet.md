@@ -32,11 +32,11 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 With a Camera Module connected and a trigger switch all set up with the Explorer HAT, you can now write a program in Python to detect movement and take a picture.
 
-1. Open a terminal window
+1. Open a terminal window.
 
 1. Type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 
-1. Then, from the `Programming` menu, open `Python 3 (IDLE)`
+1. Then, from the `Programming` menu, open `Python 3 (IDLE)`.
 
     ![Open Python](images/python3-app-menu.png)
 
