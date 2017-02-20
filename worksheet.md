@@ -42,7 +42,7 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 
 1. Click **File** > **New File** to create a blank file. Save your file into the `hamster` directory you just created and call it `hamster_party.py`.
 
-1. Begin your code by importing the Explorer HAT Python library, the PiCamera library and the sleep function from the time library:
+1. Begin your code by importing the Explorer HAT Python library, the picamera library and the sleep function from the time library:
 
     ```python
 		import explorerhat
@@ -64,15 +64,15 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 	```
 
 	Let's look at what this code does:
-	- `def hamster_awake(input):` - define a function called `hamster_awake`
-	- `with picamera.PiCamera() as camera:` and `camera.resolution = (1024, 768)` - set up the camera
-	- `camera.capture('/home/pi/hamster/image.jpg')` - take a picture and save it as `image.jpg`
-	- `sleep(0.2)`- wait 0.2 seconds between pictures
-	- `explorerhat.input.one.changed(hamster_awake)` - when input 1 is activated, call the `hamster_awake` function
+	- `def hamster_awake(input):` - defines a function called `hamster_awake`
+	- `with picamera.PiCamera() as camera:` and `camera.resolution = (1024, 768)` - sets up the camera
+	- `camera.capture('/home/pi/hamster/image.jpg')` - takes a picture and saves it as `image.jpg`
+	- `sleep(0.2)`- waits 0.2 seconds between pictures
+	- `explorerhat.input.one.changed(hamster_awake)` - when input 1 is activated, calls the `hamster_awake` function
 
 1. Save and run your code by pressing **F5**. Check that when you turn the wheel, a picture is taken and saved within the `hamster` directory. Can you spot a problem with this code? If your hamster moves around more than once, the picture overwrites each time.
 
-1. We would like to be able to save lots of different hamster pictures, so let's add a variable so that we can save the pictures with an ever increasing number in the filename. We will create a variable called `pic` to do this:
+1. We would like to be able to save lots of different hamster pictures, so let's add a variable so that we can save the pictures with an ever-increasing number in the filename. We will create a variable called `pic` to do this:
 
 	```python
 	pic = 1
@@ -122,7 +122,7 @@ We can add extra fun to the Python program that uses more features of the Explor
 	 ```
 1. Then find the line `print("Party!")` and add `disco()` underneath it to call the disco function.
 
-1. Save and test your code. Your hamster wheel switch should now trigger some disco lights on the Explorer HAT. The hamsters will love that! You can see the code so far [here](code/hamster_disco.py)
+1. Save and test your code. Your hamster wheel switch should now trigger some disco lights on the Explorer HAT. The hamsters will love that! You can see the code so far [here](code/hamster_disco.py).
 
 ## Hamsters need music to dance!
 
@@ -142,9 +142,9 @@ Finally, let's trigger some tunes for the hamsters to dance to by downloading a 
 	```python
 	os.system('omxplayer hamsterdance.mp3 &')
 	```
-	*Note that you will need to replace the name of the mp3 with the name of the file you are using, if it is different from the one being used here.*
+	Note that you will need to replace the name of the mp3 with the name of the file you are using, if it is different from the one being used here.
 
-1. Change your `sleep(0.2)` pause to be the same length as your tune. For example, my tune is 10 seconds long so I've changed to `sleep(10)`.
+1. Change your `sleep(0.2)` pause to be the same length as your tune. For example, my tune is ten seconds long so I've changed this to `sleep(10)`.
 
 1. Save the file and test that the program works by triggering the switch again.
 
