@@ -36,7 +36,7 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 
 1. Type `mkdir hamster`, and press **enter** to create a folder for your hamster party pictures.
 
-1. Then, from the `Programming` menu, open `Python 3 (IDLE)`.
+1. Then, from the **Programming** menu, open **Python 3 (IDLE)**.
 
     ![Open Python](images/python3-app-menu.png)
 
@@ -91,7 +91,7 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 	- `%03d` and `% pic` (in the camera.capture function) tells Python to insert the value of `pic` instead of `%03d`
 	- `pic += 1` - adds one to the counter
 
-1. Save your work and then run the program again by pressing `F5`, moving the hamster wheel several times. To end the program press **CTRL** and **C** on the keyboard at the same time.
+1. Save your work and then run the program again by pressing **F5**, moving the hamster wheel several times. To end the program press **CTRL** and **C** on the keyboard at the same time.
 1. Look in the `hamster` folder and check that multiple images have been saved.
 
 ## Get the party started with lights!
@@ -189,7 +189,7 @@ Run your code and let your hamster loose. When the program is triggered by the s
 
 ![](images/image003.jpg)
 
-## What's next?
+## What next?
 - Can you add to this system to feed your hamster too, for example by opening a door using a servo?
 - Can you record how many turns the hamster wheel makes, to find out how active your hamster is?
 - Can you think of other practical applications for sensors that trigger events?
