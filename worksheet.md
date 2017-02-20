@@ -26,7 +26,7 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 	![](images/jumper-croc.jpg)
 
-1. Push the other end of one of the male-to-male jumper wires into the socket labelled `Input 1` on your Explorer HAT, and the other into the socket labelled `3v3`. It does not matter which way round the wires are, as long as they are both connected.
+1. Push the other end of one of the male-to-male jumper wires into the socket labelled `Input 1` on your Explorer HAT, and the other into the socket labelled `3V3`. It does not matter which way round the wires are, as long as they are both connected.
 
 ## Create a Python program to take pictures of the hamsters
 
