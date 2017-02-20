@@ -8,7 +8,7 @@
 
 We need to find some way of being able to see what the hamsters are up to during the night. I suspect they are partying.
 
-In this project, we are going to use a Raspberry Pi camera and a Pibrella with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
+In this project, we are going to use a Raspberry Pi camera and an Explorer HAT with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 ### Hardware
 
 - 1 x [Raspberry Pi Camera Module](http://www.raspberrypi.org/product/camera-module/)
-- 1 x [Pibrella](http://pibrella.com/) (e.g. from [Cyntech](http://shop.cyntech.co.uk/products/pibrella))
+- 1 x Explorer HAT (e.g. from [Pimoroni](https://shop.pimoroni.com/products/explorer-hat))
 - 2 x crocodile clip cables (e.g. from [Amazon](http://www.amazon.co.uk/20pcs-Double-ended-Crocodile-Alligator-Jumper/dp/B00K685PZ6/))
 - 2 x male-to-male jumper wires (e.g. from [Pimoroni](http://shop.pimoroni.com/products/jumper-jerky))
 - 1 x wind speed sensor (e.g from [Maplin](http://www.maplin.co.uk/p/maplin-replacement-wind-speed-sensor-for-n96fy-n82nf))
@@ -26,7 +26,7 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 ### Software
 
 - python3-picamera
-- python3-pibrella
+- python3-explorerhat
 
 See more information on checking you have these packages installed, and how to install them, on the [software installation](software.md) page.
 
@@ -37,7 +37,7 @@ See more information on checking you have these packages installed, and how to i
 
 ## Steps
 
-1. Setting up your Raspberry Pi, Pi Camera and Pibrella
+1. Setting up your Raspberry Pi, Pi Camera and Explorer HAT
 1. Create a trigger switch
 1. Create a Python program to take pictures of the hamsters
 1. Get the party started with lights!
@@ -47,7 +47,6 @@ See more information on checking you have these packages installed, and how to i
 
 - [The worksheet](worksheet.md)
 - (Optional) Final version of Python code [hamster-party.py](code/hamster-party.py)
-    - Download to your Pi with `wget http://goo.gl/2d67Wo -O hamster-party.py --no-check-certificate`
 
 ## Disclaimer
 
