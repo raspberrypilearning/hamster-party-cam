@@ -18,7 +18,7 @@ You'll need to be online to install packages.
 1. Now install the packages you'll need:
 
   ```bash
-  sudo apt-get install python3-picamera python3-pip
+  sudo apt-get install python3-picamera
   ```
 
 1. You'll also need to install the Explorer HAT library:
