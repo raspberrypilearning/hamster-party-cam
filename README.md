@@ -46,7 +46,7 @@ See more information on checking you have these packages installed, and how to i
 ## Worksheet & included files
 
 - [The worksheet](worksheet.md)
-- (Optional) Final version of Python code [hamster-party.py](code/hamster-party.py)
+- (Optional) Final version of Python code [hamster_disco.py](code/hamster_disco.py)
 
 ## Disclaimer
 
