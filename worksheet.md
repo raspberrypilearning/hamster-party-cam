@@ -54,7 +54,7 @@ With a Camera Module connected and a trigger switch all set up with the Explorer
 
 	```python
 	def hamster_awake(input):
-    with picamera.PiCamera() as camera:
+		with picamera.PiCamera() as camera:
 			camera.resolution = (1024, 768)
 			camera.capture('/home/pi/hamster/image.jpg')
 			print("Party!")
@@ -177,7 +177,7 @@ def hamster_awake(input):
         camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
         print("Party!")
         disco()
-        os.system('hamsterdance.mp3 &')
+        os.system('omxplayer hamsterdance.mp3 &')
         pic += 1
         sleep(10)
 
