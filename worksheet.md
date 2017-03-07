@@ -6,6 +6,10 @@ In this project, we are going to use a Raspberry Pi camera and an Explorer HAT w
 
 This project is based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet. It has been a pleasure to make this Raspberry Pi poster project idea a reality.
 
+> Hamsters are nocturnal, which means that they sleep in the daytime and come out at night. This means that when you are sleeping, your hamsters are up and about and when you are up and about, your hamsters are sleeping!
+>
+> ~ Violet
+
 ![Original poster idea](images/poster.png)
 
 ## Set up hardware
