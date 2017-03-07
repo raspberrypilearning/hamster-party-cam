@@ -2,6 +2,8 @@
 
 In this project, we are going to use a Raspberry Pi camera and an Explorer HAT with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement. This will help us see what they are getting up to overnight!
 
+## Community
+
 This project is based on an idea submitted for the Raspberry Pi Poster Competition in December 2013 by Violet. It has been a pleasure to make this Raspberry Pi poster project idea a reality.
 
 ![Original poster idea](images/poster.png)
