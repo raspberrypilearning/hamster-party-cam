@@ -1,4 +1,4 @@
-We need to find some way of being able to see what the hamsters are up to during the night. I suspect they are partying.
+We need to find some way of being able to see what our pet hamsters are up to during the night. I suspect they are partying.
 
 In this project, we are going to use a Raspberry Pi Camera Module and an Explorer HAT with a Raspberry Pi to take pictures and video of the hamsters, triggered by their movement.
 
