@@ -1,0 +1,21 @@
+title: Hamster Party Cam
+hero_image: images/banner.png
+description: Find out what your hamsters are up to during the night
+original_url: https://www.raspberrypi.org/learning/hamster-party-cam/
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+interests: "pets, photography"
+technologies: "python, raspberry pi, picamera"
+steps:
+  - title: Introduction
+  - title: What you will need
+  - title: Connect the camera and Explorer HAT
+  - title: Create a trigger switch
+  - title: Take pictures of the hamsters
+  - title: Taking multiple pictures
+  - title: Get the party started with lights
+  - title: Hamsters need music to dance
+  - title: "Challenge: add to the party"
