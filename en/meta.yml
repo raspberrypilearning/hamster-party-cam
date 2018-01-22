@@ -7,6 +7,7 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
+curriculum: creator, design-1, programming-2, phys-comp-2, manufacture-0, community-0
 interests: "pets, photography"
 technologies: "python, raspberry pi, picamera"
 steps:
