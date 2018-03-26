@@ -1,25 +1,84 @@
-## Create a trigger switch
+## Recording video of the hamsters
 
-We only want the Raspberry Pi to take pictures of the hamsters when they are out having a good time. There's no doubt they are throwing out some robot dance moves in your absence! So you will need to create a way for the hamsters to trigger a program which takes pictures of their party.
+- With your Raspberry Pi connected to a keyboard, monitor and mouse, create a folder called `hamster` for your hamster party pictures.
 
-- Remove the hamster wheel from the cage and place it on a table alongside the wind speed sensor. Unscrew the wind speed sensor's case, and remove the reed switch and the magnet. You may need to find an adult to help you with this.
+[[[rpi-gui-creating-directories]]]
 
-    ![](images/reed-switch.jpg)
+- Open **Python 3 (IDLE)**
 
-    _By André Karwath aka Aka (Own work) [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5), via Wikimedia Commons_
+[[[rpi-gui-idle-opening]]]
 
-- Using wire cutters, remove the RJ45 connector at the end of the reed switch to expose the two wires inside. These will be used to connect the reed switch to your Explorer HAT.
+- Create a blank file and save it with the name `hamster_party.py` in the `hamster` directory you just created.
 
-	![](images/wires.jpg) ![](images/wires-2.jpg)
+- Begin by importing all the modules you will need for this project.
 
-- Using sticky back plastic, stick the reed switch to the centre of the hamster wheel and the magnet to the outer section of the wheel, so that it passes the reed switch when the wheel spins. Every time the magnet comes into contact with the reed switch, it will connect the wires inside.
+```python
+from gpiozero import LED, Button
+from random import choice
+from picamera import PiCamera
+from datetime import datetime
+from time import sleep
+import pygame
+```
 
-- Connect each wire from the reed switch to a separate crocodile clip cable.
+- Next you want to setup your LED, camera and button objects. You can substitue your own pin numbers and LED colours, for how you have setup your hardware.
 
-	![](images/croc-switch.jpg)
+```python
+camera = PiCamera()
+wheel = Button(10)
+red = LED(17)
+blue = LED(22)
+green = LED(9)
+yellow = LED(11)
+```
 
-- Connect the other end of each crocodile cable to the end of a male-to-male jumper wire.
+- Add a function called `hamster_awake()` which contains code to take a 60 second video of the hamster.
 
-	![](images/jumper-croc.jpg)
+```python
+def hamster_awake(input):
+	# Fill in the code here to take a picture
 
-- Push the free end of one of the jumper wires into the socket labelled **Input 1** on your Explorer HAT, and the free end of the other jumper wire into the socket labelled **3V3**. It does not matter which way round the wires are, as long as they are both connected.
+```
+
+[[[rpi-picamera-take-video]]]
+
+--- hints ---
+--- hint ---
+Read the information on **Taking a video with PiCamera** to work out how to initialise a camera object, and how to capture a photograph. Make sure you save your photograph in the `hamster` directory you created earlier.
+--- /hint ---
+
+--- hint ---
+Here is some pseudo code for what you need to do:
+
+```
+FUNCTION hamster_awake(input)
+    START RECORDING A VIDEO AND SAVE AS /home/pi/hamster/vid.h264
+    WAIT 60 SECONDS
+	STOP RECORDING
+END FUNCTION
+```
+
+--- /hint ---
+
+--- hint ---
+Here is a solution:
+
+```python
+camera.start_recording('/home/pi/hamster/vid.h264')
+sleep(60)
+camera.stop_recording
+```
+--- /hint ---
+
+--- /hints ---
+
+
+- Below the function you just wrote, add some code to call this function when the reed switch is triggered. Make sure that this code is **not** indented.
+
+```python
+wheel.when_pressed = hamster_awake
+```
+
+- Save your code and run it by pressing **F5**. Check that when you turn the wheel, a video is recorded and saved in the `hamster` directory.
+
+[[[rpi-bash-play-with-omxplayer]]]
