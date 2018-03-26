@@ -3,7 +3,7 @@
 - With your Raspberry Pi connected to a keyboard, monitor and mouse, create a folder called `hamster` for your hamster party pictures.
 
 [[[rpi-gui-creating-directories]]]
-
+n
 - Open **Python 3 (IDLE)**
 
 [[[rpi-gui-idle-opening]]]
@@ -40,7 +40,7 @@ def hamster_awake(input):
 
 ```
 
-[[[rpi-picamera-take-video]]]
+[[[rpi-camera-record-video]]]
 
 --- hints ---
 --- hint ---
@@ -65,7 +65,7 @@ Here is a solution:
 
 ```python
 camera.start_recording('/home/pi/hamster/vid.h264')
-sleep(60)
+camera.wait_recording(60)
 camera.stop_recording
 ```
 --- /hint ---
