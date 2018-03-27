@@ -35,6 +35,5 @@ def disco():
     my_sound.stop()
 
 
-
 wheel.when_pressed = hamster_awake
 
