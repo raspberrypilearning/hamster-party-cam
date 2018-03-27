@@ -39,7 +39,6 @@ def hamster_awake(input):
 	# Fill in the code here to take a picture
 
 ```
-
 [[[rpi-camera-record-video]]]
 
 --- hints ---
