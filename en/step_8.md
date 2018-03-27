@@ -1,4 +1,4 @@
-## Challenge: 
+## Challenge: Build a better disco
 
 You should now have a completed project. When the wheel turns, the lights should start flashing, the camera should start recording and music should start playing.
 

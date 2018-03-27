@@ -13,10 +13,10 @@ technologies: "python, raspberry pi, picamera"
 steps:
   - title: Introduction
   - title: What you will need
-  - title: Connect the camera and Explorer HAT
-  - title: Create a trigger switch
-  - title: Take pictures of the hamsters
-  - title: Taking multiple pictures
+  - title: Hardware setup
+  - title: Recording video of the hamster
+  - title: Time stamping the video
   - title: Get the party started with lights
   - title: Hamsters need music to dance
+  - title: "Challenge: Build a better disco"
   - title: "Challenge: add to the party"

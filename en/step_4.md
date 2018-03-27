@@ -1,4 +1,4 @@
-## Recording video of the hamsters
+## Recording video of the hamster
 
 - With your Raspberry Pi connected to a keyboard, monitor and mouse, create a folder called `hamster` for your hamster party pictures.
 
