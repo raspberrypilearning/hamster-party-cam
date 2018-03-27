@@ -52,7 +52,7 @@ def disco():
 
 - Test your function by running your code and then typing `disco()` into the Python shell.
 
-- Assuming your `disco` function causes your lights to randomly flash for a minute, you can call the function within your `hamster_awake` function.
+- Assuming your `disco` function causes your lights to randomly flash for a minute, you can call the function within your `hamster_awake` function, instead of waiting for 60 seconds.
 
 ```python
 def hamster_awake():

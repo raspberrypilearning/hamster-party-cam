@@ -3,7 +3,7 @@
 - With your Raspberry Pi connected to a keyboard, monitor and mouse, create a folder called `hamster` for your hamster party pictures.
 
 [[[rpi-gui-creating-directories]]]
-n
+
 - Open **Python 3 (IDLE)**
 
 [[[rpi-gui-idle-opening]]]
@@ -36,7 +36,7 @@ yellow = LED(11)
 
 ```python
 def hamster_awake(input):
-	# Fill in the code here to take a picture
+	# Fill in the code here to record a video
 
 ```
 [[[rpi-camera-record-video]]]
