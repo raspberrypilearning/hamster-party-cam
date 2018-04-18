@@ -8,7 +8,7 @@
 - A reed switch
 - Speaker with 3.5mm audio jack
 
-### Additional Resources
+### Additional resources
 
 + Glue
 + A hamster cage and wheel
