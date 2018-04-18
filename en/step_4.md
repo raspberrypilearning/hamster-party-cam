@@ -43,7 +43,7 @@ def hamster_awake(input):
 
 --- hints ---
 --- hint ---
-Read the information in 'Taking a video with PiCamera' to work out how to initialise a camera object and how to capture a video. Make sure you save your file in the `hamster` directory you created earlier.
+Read the information in 'Recording a video with a Raspberry Pi and Camera Module' to work out how to initialise a camera object and capture a video. Make sure you save your file in the `hamster` directory you created earlier.
 --- /hint ---
 
 --- hint ---
