@@ -1,16 +1,16 @@
 ## Recording video of the hamster
 
-- With your Raspberry Pi connected to a keyboard, monitor and mouse, create a folder called `hamster` for your hamster party pictures.
+- With your Raspberry Pi connected to a keyboard, monitor, and mouse, create a folder called `hamster` for your hamster party pictures.
 
 [[[rpi-gui-creating-directories]]]
 
-- Open **Python 3 (IDLE)**
+- Open **Python 3 (IDLE)**.
 
 [[[rpi-gui-idle-opening]]]
 
 - Create a blank file and save it with the name `hamster_party.py` in the `hamster` directory you just created.
 
-- Begin by importing all the modules you will need for this project.
+- Begin your program by importing all the modules you will need for this project:
 
 ```python
 from gpiozero import LED, Button
@@ -21,7 +21,7 @@ from time import sleep
 import pygame
 ```
 
-- Next you want to setup your LED, camera and button objects. You can substitue your own pin numbers and LED colours, for how you have setup your hardware.
+- Next you want to set up your LED, camera, and button objects. You can substitue your own pin numbers and LED colours for how you have set up your hardware.
 
 ```python
 camera = PiCamera()
@@ -32,7 +32,7 @@ green = LED(9)
 yellow = LED(11)
 ```
 
-- Add a function called `hamster_awake()` which contains code to take a 60 second video of the hamster.
+- Add a function called `hamster_awake()` that contains code to take a 60-second video of the hamster.
 
 ```python
 def hamster_awake(input):
@@ -43,11 +43,11 @@ def hamster_awake(input):
 
 --- hints ---
 --- hint ---
-Read the information on **Taking a video with PiCamera** to work out how to initialise a camera object, and how to capture a photograph. Make sure you save your photograph in the `hamster` directory you created earlier.
+Read the information in 'Taking a video with PiCamera' to work out how to initialise a camera object and how to capture a video. Make sure you save your file in the `hamster` directory you created earlier.
 --- /hint ---
 
 --- hint ---
-Here is some pseudo code for what you need to do:
+Here is some pseudo-code for what you need to do:
 
 ```
 FUNCTION hamster_awake(input)
@@ -78,6 +78,6 @@ camera.stop_recording
 wheel.when_pressed = hamster_awake
 ```
 
-- Save your code and run it by pressing **F5**. Check that when you turn the wheel, a video is recorded and saved in the `hamster` directory.
+- Save your code and run it by pressing <kbs>F5</kbd>. Check that when you turn the wheel, a video is recorded and saved in the `hamster` directory.
 
 [[[rpi-bash-play-with-omxplayer]]]
