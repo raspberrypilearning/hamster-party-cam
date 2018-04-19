@@ -78,6 +78,6 @@ camera.stop_recording
 wheel.when_pressed = hamster_awake
 ```
 
-- Save your code and run it by pressing <kbs>F5</kbd>. Check that when you turn the wheel, a video is recorded and saved in the `hamster` directory.
+- Save your code and run it by pressing <kbd>F5</kbd>. Check that when you turn the wheel, a video is recorded and saved in the `hamster` directory.
 
 [[[rpi-bash-play-with-omxplayer]]]
