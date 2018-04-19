@@ -52,7 +52,7 @@ def disco():
 
 - Test your function by running your code and then typing `disco()` into the Python shell.
 
-- Once your `disco` function causes your LEDs to randomly flash, you can go into you `hamster_awake` function and replace the `wait` command with a call of the `disco` function.
+- Once your `disco` function causes your LEDs to randomly flash, you can go into you `hamster_awake` function and replace the `wait_recording` command with a call of the `disco` function.
 
 ```python
 def hamster_awake():
@@ -62,4 +62,4 @@ def hamster_awake():
     camera.stop_recording()
 ```
 
-Since the `disco` function runs for 60 seconds, you will still record 60-second videos. If you've made it so the lights flash for a longer or shorter time, your videos will also be longer or shorter.
+Since the `disco` function runs for 60 seconds, you will still record 60-second videos. (If you've made it so the lights flash for a longer or shorter time, your videos will also be longer or shorter.)
