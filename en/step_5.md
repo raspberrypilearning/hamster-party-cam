@@ -1,4 +1,4 @@
-## Time stamping the video
+## Time-stamping the video
 
 Each time the hamster runs in the wheel, a new video will be recorded. Because right now each video gets named `vid.h264`, every new file will overwrite the previous one. You can fix that by adding a time stamp.
 
