@@ -1,68 +1,30 @@
-## Take pictures of the hamsters
+## Time stamping the video
 
-- Create a folder called `hamster` for your hamster party pictures.
+Each time the hamster runs in the wheel, a new video will be recorded. Because all the videos are named `vid.h264`, the files will constantly overwrite each other. This can be fixed by adding a time stamp to the video.
 
-[[[rpi-gui-creating-directories]]]
+[[[generic-python-timestamps]]]
 
-- Open **Python 3 (IDLE)**
+- Try and add a timestamp to the video file, so that the date, hour and minute is added to the filename.
 
-[[[rpi-gui-idle-opening]]]
-
-- Create a blank file and save it with the name `hamster_party.py` in the `hamster` directory you just created.
-
-- Begin your code by importing the `explorerhat` library, the `picamera` library, and the `sleep` function from the `time` library:
-
-    ```python
-	import explorerhat
-	import picamera
-	from time import sleep
-    ```
-
-- Add a function called `hamster_awake(input)` which contains code to take a picture of the hamster and then wait 0.2 seconds.
-
-	```python
-	def hamster_awake(input):
-		# Fill in the code here to take a picture
-
-	```
-
-[[[rpi-picamera-take-photo]]]
-
---- hints ---
---- hint ---
-Read the information on **Taking a photograph with PiCamera** to work out how to initialise a camera object, and how to capture a photograph. Make sure you save your photograph in the `hamster` directory you created earlier.
---- /hint ---
-
---- hint ---
-Here is some pseudo code for what you need to do:
-
-```
-FUNCTION hamster_awake(input)
-    SET camera = PICAMERA OBJECT
-    TAKE PICTURE AND SAVE AS /home/pi/hamster/image.jpg
-    WAIT 0.2 SECONDS
-END FUNCTION
-```
-
---- /hint ---
-
---- hint ---
-Here is a solution:
-
+--- hints --- --- hint ---
+The timestamp codes are as follows
+- Year = `%Y`
+- Month = `%m`
+- Day = `%d`
+- Hour = `%H`
+- Minute = `%M`
+--- /hint --- --- hint ---
+- To get the current date and time, you can use:
 ```python
-camera = PiCamera()
-camera.capture('/home/pi/hamster/image.jpg')
-sleep(0.2)
+now == datetime.now()
 ```
---- /hint ---
-
---- /hints ---
-
-
-- Below the function you just wrote, add some code to call this function when the reed switch is triggered. Make sure that this code is **not** indented.
-
-    ```python
-    explorerhat.input.one.changed(hamster_awake)
-    ```
-
-- Save your code and run it by pressing **F5**. Check that when you turn the wheel, a picture is taken and saved in the `hamster` directory.
+--- /hint --- --- hint ---
+The full code, to be included in your `hamster_awake` function is as follows:
+```python
+def hamster_awake():
+    now = datetime.now()
+    camera.start_recording('/home/pi/hamster/{0:%Y}-{0:%m}-{0:%d}-{0:%H}-{0:%M}.h264'.format(now))
+	camera.wait_recording(60)
+    camera.stop_recording()
+```
+--- /hint --- --- /hints ---

@@ -1,53 +1,63 @@
-## Taking multiple pictures
+## Get the party started with lights
 
-Try taking several pictures. Can you spot the problem with the way the code works?
+While your hamster is wide awake, you can use the LEDs to create a little disco for it.
 
---- collapse ---
----
-title: Answer
----
-If your hamster moves around more than once, a new picture is taken that overwrites the previous one, and you only end up with one picture.
+- First, beneath where you have created all your LED objects, create a list containing all the LEDs.
 
---- /collapse ---
-
-We would like to be able to save lots of different hamster pictures, so let's change the code to allow this.
-
-- Add a variable called `pic` just below the lines of code where you `import` the libraries. The variable should start off being equal to 1.
-
-[[[generic-python-creating-a-variable]]]
-
-- Find the line in your code which takes the picture.
-    ```python
-    camera.capture('/home/pi/hamster/image.jpg')
-    ```
-- Concatenate the variable `pic` into the file name so that the number stored in `pic` is added to the end. Because `pic` is a number, we have to convert it to a string with `str()` to be able to join it with the file name. `pic` starts off as 1, so the first saved image will be `image1.jpg`.
-
-    ```python
-    camera.capture('/home/pi/hamster/image' + str(pic) + '.jpg')
-    ```
-
-- After the picture is taken, add 1 to the `pic` variable so that you get a different number next time.
-
-- You will also need to type in `global pic` at the start of your function (immediately after `def hamster_awake(input)`). This allows you to update the variable `pic` from inside the function.
-
---- collapse ---
----
-title: Solution
----
-
-Here is the solution:
 ```python
-pic = 1
-
-def hamster_awake(input):
-    global pic
-    camera = PiCamera()
-    camera.capture('/home/pi/hamster/image' + str(pic) + '.jpg')
-    pic += 1
-    sleep(0.2)
+lights = [green, red, yellow, blue]
 ```
---- /collapse ---
 
-- Save your work and then run the program again by pressing **F5**, while moving the hamster wheel. To end the program, press the **CTRL** and **C** keyboard buttons at the same time.
+- Next create a function called `disco`.
 
-- Look in the `hamster` folder and check that multiple images have been saved.
+```python
+def disco():
+```
+
+- In the disco function you want to write some code that will randomly choose an LED and turn it on, then wait for a quarter of a second and then turn a random light off. It should do this 240 times, which will mean the lights will be flashing for a minute.
+
+--- hints --- --- hint ---
+You can choose a light to randomly turn on using the `choice` method you have imported.
+
+```python
+choice(lights).on()
+```
+
+You can use the same method to turn off a random light.
+
+```python
+choice(lights).off()
+```
+--- /hint --- --- hint ---
+You can use a `for` loop to repeat this command as amny times as you need.
+```python
+def disco():
+	for i in range(240):
+		choice(lights).on()
+		sleep(0.25)
+		choice(lights).off()
+```		
+--- /hint --- --- hint ---
+Within the function, you'll want to turn all the lights off at the end of the minute.
+```python
+def disco():
+	for i in range(240):
+		choice(lights).on()
+		sleep(0.25)
+		choice(lights).off()
+	for light in lights:
+		light.off()
+```		
+--- /hint --- --- /hints ---
+
+- Test your function by running your code and then typing `disco()` into the Python shell.
+
+- Assuming your `disco` function causes your lights to randomly flash for a minute, you can call the function within your `hamster_awake` function, instead of waiting for 60 seconds.
+
+```python
+def hamster_awake():
+    now = datetime.now()
+    camera.start_recording('/home/pi/hamster/{0:%Y}-{0:%m}-{0:%d}-{0:%H}-{0:%M}.h264'.format(now))
+    disco()
+    camera.stop_recording()
+```

@@ -1,27 +1,39 @@
-import explorerhat
-import picamera
+from gpiozero import LED, Button
+from random import choice
+from picamera import PiCamera
+from datetime import datetime
 from time import sleep
-import random
+import pygame
 
-pic = 1
-colours = [explorerhat.light.red, explorerhat.light.yellow, explorerhat.light.green, explorerhat.light.blue]
+pygame.init()
+my_sound = pygame.mixer.Sound('/home/pi/hamster/Never.wav')
+
+camera = PiCamera()
+green = LED(17)
+red = LED(22)
+yellow = LED(9)
+blue = LED(11)
+wheel = Button(10)
+lights = [green, red, yellow, blue]
+
+
+def hamster_awake():
+    now = datetime.now()
+    camera.start_recording('/home/pi/hamster/{0:%Y}-{0:%m}-{0:%d}-{0:%H}-{0:%M}.h264'.format(now))
+    disco()
+    camera.stop_recording()
+        
 
 def disco():
-    for i in range(25):
-        result = random.choice(colours)
-        result.on()
-        sleep(0.2)
-        result.off()
-
-def hamster_awake(input):
-    global pic
-    with picamera.PiCamera() as camera:
-        camera.resolution = (1024, 768)
-        camera.capture('/home/pi/hamster/image%03d.jpg' % pic)
-        print("Party!")
-        disco()
-        pic += 1
-        sleep(0.2)
+    my_sound.play()
+    for i in range(60):
+        choice(lights).on()
+        sleep(0.25)
+        choice(lights).off()
+    for light in lights:
+        light.off()
+    my_sound.stop()
 
 
-explorerhat.input.one.changed(hamster_awake)
+wheel.when_pressed = hamster_awake
+
