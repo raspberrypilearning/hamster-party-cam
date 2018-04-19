@@ -1,13 +1,13 @@
 ## Time stamping the video
 
-Each time the hamster runs in the wheel, a new video will be recorded. Because all the videos are named `vid.h264`, the files will constantly overwrite each other. This can be fixed by adding a time stamp to the video.
+Each time the hamster runs in the wheel, a new video will be recorded. Because right now each video gets named `vid.h264`, every new file will overwrite the previous one. You can fix that by adding a time stamp.
 
 [[[generic-python-timestamps]]]
 
-- Try and add a timestamp to the video file, so that the date, hour and minute is added to the filename.
+- Try and add a time stamp to the video file, so that the date, hour, and minute is added to the file name.
 
 --- hints --- --- hint ---
-The timestamp codes are as follows
+The time stamp codes are:
 - Year = `%Y`
 - Month = `%m`
 - Day = `%d`
@@ -19,7 +19,7 @@ The timestamp codes are as follows
 now == datetime.now()
 ```
 --- /hint --- --- hint ---
-The full code, to be included in your `hamster_awake` function is as follows:
+The full code to be included in your `hamster_awake` function is:
 ```python
 def hamster_awake():
     now = datetime.now()
