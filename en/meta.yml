@@ -1,6 +1,6 @@
-title: Hamster Party Cam
+title: Hamster party cam
 hero_image: images/banner.png
-description: Find out what your hamsters are up to during the night
+description: Find out what your hamsters are up to during the night!
 original_url: https://www.raspberrypi.org/learning/hamster-party-cam/
 theme: navy
 duration: 3
@@ -20,7 +20,7 @@ steps:
 - title: What you will need
 - title: Hardware setup
 - title: Recording video of the hamster
-- title: Time stamping the video
+- title: Time-stamping the video
 - title: Get the party started with lights
 - title: Hamsters need music to dance
-- title: "Challenge: Build a better disco"
+- title: "Challenge: build a better disco"
