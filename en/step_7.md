@@ -1,59 +1,44 @@
-## Get the party started with lights
+## Hamsters need music to dance
 
-We can add extra fun to the Python program by making it use features of the Explorer HAT. For example, why not make the lights come on in disco mode when a hamster triggers the switch?
+Finally, let's trigger some tunes for the hamsters to dance. For this, you need to find a `.wav` sound file you like and download it.
 
-- Have the `hamster_party.py` file open in the Python 3 (IDLE) editor.
+You can play sound files using the Python `pygame` module.
 
-- Add a new line of code below the `import` statements:
+[[[generic-python-playing-sound-files]]]
 
-	```python
-	import random
-	```
+- Below where you created your LED objects, initialise `pygame` and load up the sound file you want to play.
 
-- Below the line `pic = 1`, add a list of the LED lights on the Explorer HAT like this:
-
-	```python
-	colours = [explorerhat.light.red, explorerhat.light.yellow, explorerhat.light.green, explorerhat.light.blue]
-	```
-- Below the list, create a disco function that will do the following:
-
-    * Choose a random light from the list
-    * Switch it on for 0.2 seconds
-    * Switch it off
-
-    This sequence should be repeated 25 times so the hamsters see 25 different randomly chosen lights.
-
-[[[generic-python-simple-functions]]]
-
-[[[generic-python-random-choice]]]
-
---- hints ---
---- hint ---
-Here is some pseudo code for the function you are trying to write:
 ```python
-FUNCTION disco()
-    FOR i FROM 1 TO 25
-        SET result = RANDOM(colours)
-        TURN result ON
-        WAIT 0.2 SECONDS
-        TURN result OFF
-END FUNCTION
+pygame.init()
+my_sound = pygame.mixer.Sound('path/to/my/soundfile.wav')
 ```
---- /hint ---
 
---- hint ---
-Here is the solution:
+- At the start of the `disco` function, you want the sound file to start playing. At the end of the function, once all the lights have stopped flashing, you can stop the sound file. Add code to make this happen.
+
+--- hints --- --- hint ---
+Replace the comments in this code with your lines to start and stop playing the sound file.
 ```python
 def disco():
-    for i in range(25):
-        result = random.choice(colours)
-        result.on()
-        sleep(0.2)
-        result.off()
- ```
---- /hint ---
---- /hints ---
-
-- Find the line of code that takes the picture and add `disco()` below it to call your disco function.
-
-- Save and test your code. Your hamster wheel switch should now trigger some disco lights on the Explorer HAT. The hamsters will love that!
+	# Add a line here to start playing the sound
+    for i in range(60):
+        choice(lights).on()
+        sleep(0.25)
+        choice(lights).off()
+    for light in lights:
+        light.off()
+	# Add a line here to stop playing the sound
+```
+--- /hint --- --- hint ---
+Here's the completed function:
+```python
+def disco():
+    my_sound.play()
+    for i in range(60):
+        choice(lights).on()
+        sleep(0.25)
+        choice(lights).off()
+    for light in lights:
+        light.off()
+    my_sound.stop()
+```
+--- /hint --- --- /hints ---
