@@ -35,6 +35,5 @@ With your LEDs wired up (here shown on pins **17**, **22**, **9**, and **11**), 
 
 [[[rpi-picamera-connect-camera]]]
 
-You should have something that now looks a little like this:
 
 
