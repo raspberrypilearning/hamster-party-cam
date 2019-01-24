@@ -4,8 +4,6 @@ We only want the Raspberry Pi to take pictures of the hamsters when they are out
 
 To do this, you're going to use a reed switch.
 
-[[[generic-electronics-reed-switches]]]
-
 - Remove the hamster wheel from the cage and place it on a table.
 
 - Using a strong adhesive, glue the magnet to the rim of the hamster wheel and your reed switch to the side of the cage.
