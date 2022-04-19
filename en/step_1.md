@@ -1,5 +1,7 @@
 ## Introduction
 
+[[[camera-bullseye]]]
+
 ### What you will make
 
 Have you ever wondered what your pet hamsters get up to during the night? I suspect they are partying!
