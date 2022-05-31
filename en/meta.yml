@@ -1,3 +1,4 @@
+---
 title: Hamster party cam
 hero_image: images/banner.png
 description: Find out what your hamsters are up to during the night!
@@ -15,12 +16,16 @@ software: python
 site_areas: projects
 version: 4
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
 - title: Hardware setup
 - title: Recording video of the hamster
+  completion:
+  - engaged
 - title: Time-stamping the video
 - title: Get the party started with lights
 - title: Hamsters need music to dance
-- title: "Challenge: build a better disco"
+  completion:
+  - internal
+- title: 'Challenge: build a better disco'
