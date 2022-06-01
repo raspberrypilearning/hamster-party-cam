@@ -19,11 +19,13 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
-  completion: engaged
 - title: Hardware setup
 - title: Recording video of the hamster
+  completion:
+  - engaged
 - title: Time-stamping the video
 - title: Get the party started with lights
 - title: Hamsters need music to dance
+  completion:
+  - internal
 - title: 'Challenge: build a better disco'
-  completion: internal
