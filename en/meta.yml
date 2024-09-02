@@ -5,7 +5,7 @@ description: Find out what your hamsters are up to during the night!
 original_url: https://www.raspberrypi.org/learning/hamster-party-cam/
 theme: navy
 duration: 3
-listed: true
+listed: false
 ingredient: false
 copyedit: true
 curriculum: 3, design-0, programming-2, phys-comp-3, manufacture-1, community-0
