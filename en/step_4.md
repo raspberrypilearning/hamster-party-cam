@@ -15,7 +15,7 @@
 ```python
 from gpiozero import LED, Button
 from random import choice
-from picamera import PiCamera
+from picamzero import Camera
 from datetime import datetime
 from time import sleep
 import pygame
@@ -24,7 +24,7 @@ import pygame
 - Next you want to set up your LED, camera, and button objects. You can substitue your own pin numbers and LED colours for how you have set up your hardware.
 
 ```python
-camera = PiCamera()
+camera = Camera()
 wheel = Button(10)
 red = LED(17)
 blue = LED(22)
@@ -51,7 +51,7 @@ Here is some pseudo-code for what you need to do:
 
 ```
 FUNCTION hamster_awake(input)
-    START RECORDING A VIDEO AND SAVE AS /home/pi/hamster/vid.h264
+    START RECORDING A VIDEO AND SAVE AS /home/pi/hamster/vid.mp4
     WAIT 60 SECONDS
 	STOP RECORDING
 END FUNCTION
@@ -63,9 +63,7 @@ END FUNCTION
 Here is a solution:
 
 ```python
-camera.start_recording('/home/pi/hamster/vid.h264')
-camera.wait_recording(60)
-camera.stop_recording
+camera.record_video("/home/pi/hamster/vid.mp4", duration=60)
 ```
 --- /hint ---
 
